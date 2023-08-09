@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <title>Testimonial Box</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #f4f4f4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+      }
+
+      .container {
+        background-color: #476ce4;
+        color: #fff;
+        border-radius: 15px;
+        margin: 20px auto;
+        padding: 50px 80px;
+        max-width: 768px;
+        position: relative;
+      }
+
+      .fa-quote {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 28px;
+        position: absolute;
+        top: 70px;
+      }
+      .fa-quote-right {
+        left: 40px;
+      }
+
+      .fa-quote-left {
+        right: 40px;
+      }
+
+      .testimonial {
+        line-height: 28px;
+        text-align: justify;
+      }
+
+      .user {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .user .user-image {
+        border-radius: 50%;
+        height: 75px;
+        width: 75px;
+        object-fit: cover;
+      }
+
+      .user .user-details {
+        margin-left: 10px;
+      }
+
+      .user .username {
+        margin: 0;
+      }
+
+      .user .role {
+        font-weight: normal;
+        margin: 10px 0;
+      }
+
+      .progress-bar {
+        background-color: #fff;
+        height: 4px;
+        border-radius: 2px;
+        animation: grow 8s linear infinite;
+        transform-origin: left;
+      }
+
+      @keyframes grow {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 20px 30px;
+          margin: 0 20px;
+        }
+
+        .fa-quote {
+          display: none;
+        }
+
+        .testimonial {
+          line-height: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="progress-bar"></div>
+      <div class="fas fa-quote-right fa-quote"></div>
+      <div class="fas fa-quote-left fa-quote"></div>
+      <p class="testimonial">
+        I've worked with literally hundreds of HTML/CSS developers and I have to
+        say the top spot goes to this guy. This guy is an amazing developer. He
+        stresses on good, clean code and pays heed to the details. I love
+        developers who respect each and every aspect of a throughly thought out
+        design and do their best to put it in code. He goes over and beyond and
+        transforms ART into PIXELS - without a glitch, every time.
+      </p>
+      <div class="user">
+        <img
+          src="https://randomuser.me/api/portraits/women/46.jpg"
+          alt="user"
+          class="user-image"
+        />
+        <div class="user-details">
+          <h4 class="username">Miyah Myles</h4>
+          <p class="role">Marketing</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
